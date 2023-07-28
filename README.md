@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-LcUQKoPqsm
 - Live Site URL: https://satryandi-miniproject14.netlify.app/
 
 ## My process
