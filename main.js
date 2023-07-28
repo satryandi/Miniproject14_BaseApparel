@@ -1,0 +1,27 @@
+const submit = document.querySelector(".submit")
+const errorMessage = document.querySelector(".errorMessage")
+const form = document.querySelector("form")
+const input = document.querySelector("input")
+const label = document.querySelector("label")
+
+
+form.addEventListener("submit", validate)
+submit.addEventListener("click", validate)
+
+function validate(e) {
+    e.preventDefault()
+
+    const inputValue = input.value.trim()
+
+    if (!isEmail(inputValue)) {
+        errorMessage.style.display = "block"
+        label.style.display = "block"
+    } else {
+        errorMessage.style.display = "none"
+        label.style.display = "none"
+    }
+}
+
+function isEmail(input) {
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input)
+}

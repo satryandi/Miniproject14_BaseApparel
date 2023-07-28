@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <title>Base Apparel</title>
+
+  <!-- Icon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+    <header class="logo">
+      <img src="images/logo.svg" alt="">
+    </header>
+
+    <main class="content">
+      <section class="heroImg">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-mobile.jpg" alt="">
+        </picture>
+      </section>
+
+      <section class="form">
+        <h2 class="title">We're <span>coming soon</span></h2>
+
+        <p class="desc">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.
+        </p>
+
+        <form autocomplete="off">
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email Address" required />
+            <label for="email">
+              <img src="./images/icon-error.svg" alt="" />
+            </label>
+            <button type="submit" class="submit">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+          <p class="errorMessage">Please provide a valid email</p>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
